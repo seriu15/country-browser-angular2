@@ -1,0 +1,20 @@
+ul{
+  padding-left: 10px;
+}
+
+ul li{
+  list-style-type: none;
+  font-size: 16px;
+}
+
+ul li:after{
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 10px 0;
+  background: #e7e7e7;
+}
+
+.smallText {
+  font-size: small;
+}

@@ -1,0 +1,23 @@
+<div class="form-group">
+  <h2>
+    <label>
+      <input type="checkbox" name="selectAll" [checked]="toggle" (change)="toggleAll()">
+      <span>{{continent}}</span>
+    </label>
+    <label>
+      <span class="smallText">
+        Sorted descending
+        <input (change)="sortThisBy()" type="checkbox">
+      </span>
+    </label>
+  </h2>
+  <ul>
+    <li *ngFor="let item of items">
+      <label>
+        <input type="checkbox" [(ngModel)]="item.selected" (change)="checkBoxState()" value="{{item.name}}"/>
+        <span>{{item.name}}</span>
+      </label>
+    </li>
+  </ul>
+</div>
+
